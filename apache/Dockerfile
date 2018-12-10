@@ -7,4 +7,6 @@ RUN apk --update \
     && rm -f /var/cache/apk/* \
     && mkdir /run/apache2
 
+COPY www/ /var/www/localhost/htdocs
+
 CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND"]
