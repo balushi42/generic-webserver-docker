@@ -3,7 +3,5 @@ version: '3'
 services:
   web:
     build: ./apache
-#    volumes:
-#      - ./apache/www:/var/www/localhost/htdocs
     ports:
       - 80:80
